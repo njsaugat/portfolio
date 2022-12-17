@@ -8,6 +8,9 @@ import Juggle from './components/Juggle';
 import Hero from './pages/Hero';
 import About from './pages/About';
 import Projects from './pages/Projects';
+import SideProjects from './pages/SideProjects';
+import Footer from './components/Footer';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <SideProjects />
+      <Contact />
+      <Footer />
       {/* <Juggle /> */}
     </div>
   );
