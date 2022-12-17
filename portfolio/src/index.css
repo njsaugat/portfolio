@@ -1,10 +1,11 @@
+@import url('App.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 body {
   overflow-x: hidden;
 }
-
 :root {
   --purple: rgb(123, 31, 162);
   --violet: rgb(103, 58, 183);
@@ -67,6 +68,22 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+.project {
+  /* border-radius: 39px;
+  background: linear-gradient(145deg, #2e3b4d, #37465b);
+  background: linear-gradient(180deg, #0f172a, #334155); */
+  /* box-shadow: 18px 18px 36px #161c25, -18px -18px 36px #506685; */
+  opacity: 0;
+  transform: translateX(200%);
+  transition: 0.9s ease-in-out;
+}
+.project:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+.project.show {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .blob {
   position: absolute;
@@ -123,7 +140,7 @@ body {
 }
 .magic {
   /* overflow-wrap: break-word; */
-  animation: background-pan 5s linear infinite;
+  animation: background-pan 3s linear infinite;
   background: linear-gradient(
     to right,
     var(--purple),
@@ -171,6 +188,27 @@ body {
 }
 .juggle-box:nth-child(8) {
   transform: translate(100px, -100px);
+}
+
+.details {
+  background-color: rgba(34, 34, 34, 0.569);
+  justify-content: space-between;
+  color: white;
+  padding: 0.7rem 1rem;
+  height: 0;
+  width: 0%;
+  width: 100%;
+  opacity: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0%;
+  transition: 0.5s ease;
+}
+
+.side-project:hover .details {
+  margin-top: 0;
+  height: 5rem;
+  opacity: 1;
 }
 
 /* .rotate-box {
