@@ -34,7 +34,7 @@ const Contact = () => {
             {/* Email */}
           </label>
         </div>
-        <div className="message field field flex flex-col mb-20 text-lg  relative">
+        <div className="message field field flex flex-col mb-10 text-lg  relative">
           <textarea
             type="text"
             className="bg-transparent h-36 resize-none text-white shadow-2xl shadow-slate-900"
@@ -46,14 +46,10 @@ const Contact = () => {
             {/* Password */}
           </label>
         </div>
-        <div className="flex items-center justify-center ">
-          <button className="px-5 py-3 my-5 text-black submit-form transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-pink-500 to-pink-100 hover:shadow-xl hover:scale-105">
+        <div className="flex items-center  justify-center ">
+          <button className="px-5 py-3 my-5 text-black  submit-form transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-pink-500 to-pink-100 hover:shadow-xl hover:scale-105">
             Submit
           </button>
-        </div>
-        <div className="footer">
-          Don't have an account?
-          <a href="#">Register</a>
         </div>
       </form>{' '}
     </div>
