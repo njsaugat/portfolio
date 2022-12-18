@@ -28,7 +28,7 @@ const SideProjects = () => {
       className=" w-screen h-auto p-10 md:p-20 text-white bg-gradient-to-tr
   from-slate-700 to-slate-900"
     >
-      <h1 className="font-bold  text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
+      <h1 className="font-bold  magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
         Side Projects
       </h1>
 
@@ -38,7 +38,7 @@ const SideProjects = () => {
             return (
               index < showItems && (
                 <>
-                  <div className="relative overflow-hidden  rounded-xl w-72 h-72 side-project hover:-translate-y-1.5 transition-all duration-300">
+                  <div className="relative overflow-hidden  rounded-xl w-72 h-72 side-project hover:-translate-y-1.5 transition-all duration-300 hover:shadow-xl hover:shadow-slate-900">
                     <img
                       src="https://picsum.photos/1280"
                       className="object-cover w-full h-full rounded-xl hover:scale-110  transition-all  duration-500 ease-in-out "
