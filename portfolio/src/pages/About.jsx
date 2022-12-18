@@ -22,7 +22,7 @@ const About = () => {
       className="   w-screen h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
      from-slate-900 to-slate-900   gap-x-5 "
     >
-      <h1 className="font-bold  text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-slate-50 to-slate-400   leading-tight md:leading-snug">
+      <h1 className="font-bold magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-slate-50 to-slate-400   leading-tight md:leading-snug">
         About Me
       </h1>
       <section className=" w-full flex flex-col-reverse lg:justify-between gap-x-4 lg:flex-row ">
