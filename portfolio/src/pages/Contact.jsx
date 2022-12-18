@@ -47,7 +47,9 @@ const Contact = () => {
           </label>
         </div>
         <div className="login">
-          <button>Login</button>
+          <button className="px-5 py-3 my-5 text-black transition-all rounded-full w-36 outline-0 bg-gradient-to-t from-purple-500 to-purple-100 hover:shadow-xl hover:scale-105">
+            Login
+          </button>
         </div>
         <div className="footer">
           Don't have an account?
