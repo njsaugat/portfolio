@@ -50,7 +50,7 @@ const Projects = () => {
       className=" w-screen min-h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
   from-slate-700 to-slate-900"
     >
-      <h1 className="font-bold  text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
+      <h1 className="font-bold magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
         Featured Projects
       </h1>
 
