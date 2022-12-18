@@ -47,7 +47,7 @@ const Contact = () => {
           </label>
         </div>
         <div className="flex items-center justify-center ">
-          <button className="px-5 py-3 my-5 text-black submit-form transition-all  rounded-full w-36 outline-0  hover:shadow-xl hover:scale-105">
+          <button className="px-5 py-3 my-5 text-black submit-form transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-pink-500 to-pink-100 hover:shadow-xl hover:scale-105">
             Submit
           </button>
         </div>
