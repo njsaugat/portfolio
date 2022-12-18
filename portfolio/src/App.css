@@ -1,3 +1,8 @@
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(171, 136, 232);
+  --pink: rgb(244, 143, 177);
+}
 .contact-container {
   /* background-color: rgba(2, 34, 63, 0.647); */
   /* height: 400px;
@@ -23,11 +28,13 @@
   width: 100%;
   height: 2.5rem;
   font: inherit;
+  /* background-color: rgb(154, 221, 248); */
   background-color: rgb(154, 221, 248);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 1.4rem;
+  color: black;
 }
 
 .login button:active {
@@ -35,7 +42,6 @@
 }
 .login button:hover {
   background-color: lightblue;
-  color: blue;
 }
 .footer {
   margin-top: 2rem;
@@ -64,12 +70,14 @@
 .field input:focus,
 .field textarea:focus {
   outline: none;
-  border-bottom-color: rgb(154, 221, 248);
+  /* border-bottom-color: rgb(154, 221, 248); */
+  border-bottom-color: rgb(244, 143, 177);
 }
 
 .field input:focus + label span,
 .field textarea:focus + label span {
-  color: rgb(154, 221, 248);
+  /* color: rgb(154, 221, 248); */
+  color: rgb(244, 143, 177);
   transform: translateY(-10px);
 }
 .active {
