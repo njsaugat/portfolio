@@ -46,8 +46,8 @@ const Contact = () => {
             {/* Password */}
           </label>
         </div>
-        <div className="flex items-center justify-center submit-form">
-          <button className="px-5 py-3 my-5 text-black transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-purple-500 to-purple-100 hover:shadow-xl hover:scale-105">
+        <div className="flex items-center justify-center ">
+          <button className="px-5 py-3 my-5 text-black submit-form transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-purple-500 to-purple-100 hover:shadow-xl hover:scale-105">
             Submit
           </button>
         </div>
