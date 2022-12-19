@@ -47,11 +47,12 @@ const Projects = () => {
   const getRandom = () => Math.floor(Math.random() * 255);
   return (
     <div
+      id="projects"
       className=" w-screen min-h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
   from-slate-700 to-slate-900"
     >
-      <h1 className="font-bold magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
-        Featured Projects
+      <h1 className="font-bold magic w-full h-auto text-5xl text-transparent drop-shadow-md bg-clip-text    leading-tight md:leading-snug text-clip flex flex-wrap">
+        <span className="hidden md:block">Featured&nbsp; </span> Projects
       </h1>
 
       <div className="projects flex flex-col  items-center justify-center gap-y-5 gap-x-5  ">
@@ -79,18 +80,18 @@ const Projects = () => {
                 index == 1 ? 'md:flex-row-reverse ' : ''
               }flex flex-col md:flex-row items-center justify-center relative   w-full project`}
             >
-              <div className="left w-full lg:w-1/2 md:w-full overflow-hidden h-96  rounded-3xl my-4">
+              <div className="left w-full lg:w-1/2 md:w-full overflow-hidden h-96  rounded-3xl my-4 hover:shadow-xl hover:shadow-slate-900">
                 <img
                   src="https://picsum.photos/1280"
                   alt=""
                   srcset=""
-                  className=" rounded-3xl hover:scale-110 object-cover transition-all w-full h-full duration-500 ease-in-out"
+                  className=" rounded-3xl hover:scale-110 object-cover transition-all w-full h-full duration-500 ease-in-out "
                 />
               </div>
               <div
                 className={`right  md:h-auto -translate-y-1/3 opacity-70 md:opacity-100 md:-translate-x-10 ${
                   index === 1 && 'md:translate-x-10'
-                } md:translate-y-0 rounded-3xl  flex flex-col items-center bg-black p-5  shadow-xl hover:shadow-2xl hover:shadow-slate-700 duration-300 w-full lg:w-1/3  `}
+                } md:translate-y-0 rounded-3xl  flex flex-col items-center bg-black p-5  shadow-xl  hover:shadow-xl hover:shadow-slate-900 duration-300 w-full lg:w-1/3  `}
               >
                 <h2 className="text-xl my-3 font-bold">{project.title}</h2>
                 <section className="text-slate-200">
@@ -101,14 +102,14 @@ const Projects = () => {
           );
         })}
       </div>
-      <div
+      {/* <div
         style={{
           backgroundColor: `rgb(${getRandom()},${getRandom()},${getRandom()})`,
         }}
         className="w-20 h-20"
       >
         {' '}
-      </div>
+      </div> */}
       {/* <span className="w-20 h-20 rounded-full right-0 top-0 translate-x-1/2 -translate-y-1/2 bg-sky-300 "></span> */}
     </div>
   );
