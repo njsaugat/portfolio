@@ -2,7 +2,7 @@ import React from 'react';
 import Blobs from '../components/Blobs';
 import Navbar from '../components/Navbar';
 import Tagline from '../components/Tagline';
-
+import profile from '../assets/profile.png';
 const Hero = () => {
   return (
     <>
@@ -25,8 +25,13 @@ const Hero = () => {
         </div>
         <div
           className={` flex items-center justify-center 
-        lg:w-2/5 w-full md:w-3/5 md:  transition-all duration-1000 mb-56 md:mb-64  mt-0 `}
+        lg:w-2/5 w-full md:w-3/5 md:  transition-all duration-1000 mb-56 md:mb-64  mt-0  `}
         >
+          <img
+            src={profile}
+            className="absolute z-10 w-20 h-auto shadow-2xl rounded-full translate-x-full translate-y-1/2"
+          />
+
           <Blobs />
           {/* <WhiteScreen movieImg={movieImg} /> */}
         </div>
