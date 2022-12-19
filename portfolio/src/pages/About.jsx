@@ -19,6 +19,7 @@ const About = () => {
   });
   return (
     <div
+      id="about"
       className="   w-screen h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
      from-slate-900 to-slate-900   gap-x-5 "
     >
