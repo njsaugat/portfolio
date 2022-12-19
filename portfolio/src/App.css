@@ -77,12 +77,17 @@
 .field input:focus + label span,
 .field textarea:focus + label span {
   /* color: rgb(154, 221, 248); */
-  /* color: rgb(244, 143, 177); */
+  color: rgb(244, 143, 177);
   transform: translateY(-10px);
 }
 .active {
   transform: translateY(-10px);
 }
 .submit-form {
-  background-color: rgb(244, 143, 177);
+  /* background-color: rgb(244, 143, 177); */
+  background-image: linear-gradient(
+    180deg,
+    rgb(244, 143, 177),
+    rgb(246, 207, 220)
+  );
 }
