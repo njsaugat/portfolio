@@ -28,15 +28,25 @@ const RenderMenuList = ({ icons }) => {
       <a to={'/home'} rel="noreferrer" className="list-none">
         {icons && icons[0]} Home
       </a>
-      <a to={'/movies-wishlist'} rel="noreferrer" className="list-none">
+      <a
+        href="#about"
+        to={'/movies-wishlist'}
+        rel="noreferrer"
+        className="list-none"
+      >
         {icons && icons[1]} About Me
       </a>
-      <a to={'/movies-wishlist'} rel="noreferrer" className="list-none">
+      <a
+        href="#projects"
+        to={'/movies-wishlist'}
+        rel="noreferrer"
+        className="list-none"
+      >
         {icons && icons[2]} Projects
       </a>
 
-      <a to={'/home'} rel="noreferrer" className="list-none">
-        {icons && icons[3]} Contact Me
+      <a href="#contact" to={'/home'} rel="noreferrer" className="list-none">
+        {icons && icons[3]} Contact
       </a>
       {/* <a href="# " rel="noreferrer" className="list-none">
         {icons && icons[1]} About Us
