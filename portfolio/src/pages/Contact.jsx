@@ -9,6 +9,7 @@ function createWave(text) {
 const Contact = () => {
   return (
     <div
+      id="contact"
       className="   w-screen h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
    from-slate-900 to-slate-900 flex items-center justify-center  flex-col  gap-x-5 "
     >
@@ -47,7 +48,7 @@ const Contact = () => {
           </label>
         </div>
         <div className="flex items-center  justify-center ">
-          <button className="px-5 py-3 my-5 text-black  submit-form transition-all  rounded-full w-36 outline-0 bg-gradient-to-t from-pink-500 to-pink-100 hover:shadow-xl hover:scale-105">
+          <button className="px-5 py-3 my-5 text-black  submit-form transition-all  rounded-full w-36 outline-0 hover:shadow-xl hover:scale-105">
             Submit
           </button>
         </div>
