@@ -14,7 +14,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="App bg-black w-screen h-screen  ">
+    <>
       {/* <Navbar /> */}
       {/* <Blobs />
       <Tagline /> */}
@@ -25,7 +25,7 @@ function App() {
       <Contact />
       <Footer />
       {/* <Juggle /> */}
-    </div>
+    </>
   );
 }
 
