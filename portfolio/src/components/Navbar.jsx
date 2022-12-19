@@ -49,7 +49,7 @@ const Navbar = ({ transparent }) => {
     }, []);
     return createPortal(
       <div
-        className={`fixed navs top-0 left-0 right-0 bottom-0 z-100 bg-gradient-to-b from-slate-900 to-slate-700  bg-opacity-95 overflow-y-hidden
+        className={`fixed navs top-0 left-0  z-100 bg-gradient-to-b from-slate-900 to-slate-700  bg-opacity-95 overflow-y-hidden
       w-screen h-screen text-white  transition-all ease-in-out delay-400 inset-0 z-10`}
       >
         <div className="absolute flex justify-between w-11/12 h-screen p-10 text-2xl transition-all z-100 ">
@@ -61,7 +61,7 @@ const Navbar = ({ transparent }) => {
               setShowMenu(false);
               portal.classList.remove('active');
             }}
-            className="flex items-center justify-center w-10 h-10 p-2 text-black transition-all duration-300 rounded-lg cursor-pointer bg-gradient-to-b from-slate-400 to-slate-50 hover:shadow-xl hover:rotate-90"
+            className="flex items-center justify-center w-10 h-10 p-2 text-red-500 transition-all duration-300 rounded-full cursor-pointer bg-gradient-to-b from-slate-700 to-transparent hover:shadow-xl hover:rotate-90"
           >
             {crossIcon}
           </span>
