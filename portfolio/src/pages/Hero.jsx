@@ -35,7 +35,6 @@ const Hero = () => {
             // src={profile}
             // src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             className="absolute z-10 object-cover shadow-2xl w-28 h-32 left-1/3 md:left-auto md:w-32 md:h-40 lg:w-36 lg:h-44 rounded-full translate-x-1/4 md:translate-x-1/2 lg:translate-x-1/2 translate-y-full md:translate-y-1/2 lg:translate-y-1/2"
-            // className="absolute z-10 object-cover  w-28 h-36 md:w-32 md:h-40 lg:w-36 lg:h-44 rounded-full  left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "
           />
 
           <Blobs />
