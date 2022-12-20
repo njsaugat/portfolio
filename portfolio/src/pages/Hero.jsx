@@ -39,7 +39,6 @@ const Hero = () => {
           />
 
           <Blobs />
-          {/* <WhiteScreen movieImg={movieImg} /> */}
         </div>
         {/* <Waves /> */}
       </main>
