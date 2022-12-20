@@ -40,7 +40,6 @@ const Hero = () => {
 
           <Blobs />
         </div>
-        {/* <Waves /> */}
       </main>
     </>
   );
