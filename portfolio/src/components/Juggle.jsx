@@ -1,11 +1,4 @@
 import React from 'react';
-import express from '../assets/express.svg';
-import javascript from '../assets/javascript.svg';
-import mysql from '../assets/mysql.svg';
-import typescript from '../assets/typescript.svg';
-import node from '../assets/node.svg';
-import reacts from '../assets/reacts.svg';
-import mongo from '../assets/mongo.svg';
 // const languages = [1, 2, 3, 4, 5, 6, 7, 8];
 const languages = [
   {
