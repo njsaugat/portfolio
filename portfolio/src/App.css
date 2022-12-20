@@ -66,6 +66,10 @@
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.field input:hover,
+.field textarea:hover {
+  border-bottom-color: rgba(244, 143, 177, 0.887);
+}
 .field input:valid,
 .field input:focus,
 .field textarea:focus {
@@ -85,9 +89,56 @@
 }
 .submit-form {
   /* background-color: rgb(244, 143, 177); */
+  /* color: white; */
   background-image: linear-gradient(
     180deg,
     rgb(244, 143, 177),
     rgb(246, 207, 220)
   );
+  /* color: black; */
+  border: 2px solid white;
 }
+.submit-form:hover {
+  border-color: rgb(244, 143, 177);
+}
+.submit-form:hover button {
+  /* border-color: rgb(244, 143, 177); */
+  /* color: rgb(244, 143, 177); */
+}
+
+/* .submit-form:hover {
+  border-color: rgb(244, 143, 177);
+}
+
+.submit-form::placeholder {
+  color: rgb(244, 143, 177);
+  background: linear-gradient(#ffffff70, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ */
+/* .submit-form::placeholder {
+  background: linear-gradient(#ffffff70, #ffffff);
+  background-image: linear-gradient(
+    to left,
+    rgb(244, 143, 177),
+    rgb(246, 207, 220)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+/* .submit-form:hover:not(:placeholder-shown) {
+  background-image: linear-gradient(
+    180deg,
+    rgb(244, 143, 177),
+    rgb(255, 255, 255)
+  );
+
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  -webkit-text-fill-color: transparent;
+} */
