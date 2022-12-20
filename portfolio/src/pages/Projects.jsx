@@ -1,4 +1,7 @@
 import React, { useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+const shareIcon = <FontAwesomeIcon icon={faArrowUpRightFromSquare} />;
 
 const projectsList = [
   {
@@ -7,6 +10,8 @@ const projectsList = [
     link: 'https://github.com/njsaugat/moviesWishlist',
     description:
       'Cinewish is a one common ground for all your favorite movies. You can add movies to favorites, get movie recommendation, and even set email reminder to watch movies',
+    imageLink:
+      'https://camo.githubusercontent.com/d0bb7c5f2bfa0a1b052954e3a24b28d1a8cf0aca25febc84ca7be22a45d365c8/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f514d78494c3547715f6b545f7a6871464a7369425a6a3238565f74534975504e754b58626857646f2d7336486f446849615750646b4b516344665763707877496930583669545351646c4568356277396a445670794c7649397667442d67624638316f4a4d716954694d442d4f674f764b435f7561484433632d43396c61314f486779526a7173494c4a635a6e444e466246613054796f67594852594375676f4c735730777455526f66785f3070436d4e68517853596d4c5a776b594651',
   },
   {
     id: 2,
@@ -14,6 +19,8 @@ const projectsList = [
     link: 'https://github.com/njsaugat/houseMarket',
     description:
       'GharShar is a real estate app that allows users to either sale or rent their property. The user can list their properties, manage their profile, update the property listing. All basic CRUD operaions are supported',
+    imageLink:
+      'https://camo.githubusercontent.com/d0bb7c5f2bfa0a1b052954e3a24b28d1a8cf0aca25febc84ca7be22a45d365c8/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f514d78494c3547715f6b545f7a6871464a7369425a6a3238565f74534975504e754b58626857646f2d7336486f446849615750646b4b516344665763707877496930583669545351646c4568356277396a445670794c7649397667442d67624638316f4a4d716954694d442d4f674f764b435f7561484433632d43396c61314f486779526a7173494c4a635a6e444e466246613054796f67594852594375676f4c735730777455526f66785f3070436d4e68517853596d4c5a776b594651',
   },
   {
     id: 3,
@@ -21,6 +28,8 @@ const projectsList = [
     link: 'https://github.com/njsaugat/50_Projects__15_Days',
     description:
       'This is the random collection game that allows the users to catch the insect. It is a interesting pass time game developed.',
+    imageLink:
+      'https://camo.githubusercontent.com/d0bb7c5f2bfa0a1b052954e3a24b28d1a8cf0aca25febc84ca7be22a45d365c8/68747470733a2f2f6c68362e676f6f676c6575736572636f6e74656e742e636f6d2f514d78494c3547715f6b545f7a6871464a7369425a6a3238565f74534975504e754b58626857646f2d7336486f446849615750646b4b516344665763707877496930583669545351646c4568356277396a445670794c7649397667442d67624638316f4a4d716954694d442d4f674f764b435f7561484433632d43396c61314f486779526a7173494c4a635a6e444e466246613054796f67594852594375676f4c735730777455526f66785f3070436d4e68517853596d4c5a776b594651',
   },
   // {
   //   id: 4,
@@ -82,10 +91,11 @@ const Projects = () => {
             >
               <div className="left w-full lg:w-1/2 md:w-full overflow-hidden h-96  rounded-3xl my-4 hover:shadow-xl hover:shadow-slate-900">
                 <img
-                  src="https://picsum.photos/1280"
+                  // src="https://picsum.photos/1280"
+                  src={project.imageLink}
                   alt=""
                   srcset=""
-                  className=" rounded-3xl hover:scale-110 object-cover transition-all w-full h-full duration-500 ease-in-out "
+                  className=" rounded-3xl hover:scale-110 object-cover   object-right lg:object-cover transition-all w-full h-full duration-500 ease-in-out "
                 />
               </div>
               <div
@@ -97,6 +107,13 @@ const Projects = () => {
                 <section className="text-slate-200">
                   {project.description}
                 </section>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  className="self-start mt-4 text-xl"
+                >
+                  {shareIcon}{' '}
+                </a>
               </div>
             </div>
           );
