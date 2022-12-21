@@ -100,7 +100,7 @@ body {
   /* box-shadow: 18px 18px 36px #161c25, -18px -18px 36px #506685; */
   opacity: 0;
   transform: translateX(200%);
-  transition: 0.9s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 .project:nth-of-type(even) {
   transform: translateX(-200%);
