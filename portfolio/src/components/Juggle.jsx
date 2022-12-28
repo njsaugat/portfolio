@@ -58,6 +58,7 @@ const Juggle = () => {
           <div
             className={`
           ${index}  text-white absolute rotate-box overflow-hidden border-slate-600 rounded-full juggle-box text-xl  flex items-center justify-center `}
+            key={language.id}
           >
             {/* <img src={language} alt="" srcSet=""  className='w-10 h-10 object-cover'/> */}
             <img
