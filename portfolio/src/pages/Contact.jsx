@@ -1,10 +1,24 @@
 import React from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+
+const githubIcon = <FontAwesomeIcon icon={faGithub} size="1x" />;
+const twitterIcon = <FontAwesomeIcon icon={faTwitter} size="1x" />;
+const linkedinIcon = <FontAwesomeIcon icon={faLinkedin} size="1x" />;
 
 function createWave(text) {
   return text.split('').map((letter, index) => {
-    return <span style={{ transitionDelay: `${index * 50}ms` }}>{letter}</span>;
+    return (
+      <span style={{ transitionDelay: `${index * 50}ms` }} key={index}>
+        {letter}
+      </span>
+    );
   });
   // .join('');
 }
@@ -59,9 +73,34 @@ const Contact = () => {
       className="   w-screen h-screen lg:h-auto p-10 md:p-20 text-white bg-gradient-to-tr
    from-slate-900 to-slate-900 flex items-center justify-center  flex-col  gap-x-5 "
     >
-      <h1 className="font-bold self-start magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
-        Contact
-      </h1>
+      <div className="flex justify-between w-full items-center ">
+        <h1 className="font-bold self-start magic text-5xl text-transparent drop-shadow-md bg-clip-text bg-gradient-to-t from-blue-50 to-blue-500   leading-tight md:leading-snug">
+          Contact
+        </h1>
+        <div className="flex space-x-5 md:space-x-10 lg:space-x-20 text-2xl">
+          <a
+            href="https://github.com/njsaugat"
+            target="_blank"
+            className="hover:animate-pulse"
+          >
+            {githubIcon}
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saugat-poudel-08b1241a0/"
+            target="_blank"
+            className="hover:animate-pulse"
+          >
+            {linkedinIcon}
+          </a>
+          <a
+            href="https://twitter.com/njsaugat"
+            target="_blank"
+            className="hover:animate-pulse"
+          >
+            {twitterIcon}
+          </a>
+        </div>
+      </div>
       <form
         className="contact-container w-11/12 md:w-10/12 lg:w-2/5 rounded-lg flex flex-col px-4 py-8 "
         ref={form}
@@ -73,14 +112,14 @@ const Contact = () => {
         </h3>
         <div className="name field flex flex-col mb-20 text-lg relative">
           <input type="text" required ref={name} name="user_name" />
-          <label for="name">
+          <label htmlFor="name">
             {createWave('Name')}
             {/* Email */}
           </label>
         </div>
         <div className="email field field flex flex-col mb-20 text-lg relative">
           <input type="email" required ref={email} name="user_email" />
-          <label for="email">
+          <label htmlFor="email">
             {createWave('Email')}
             {/* Email */}
           </label>
@@ -94,7 +133,7 @@ const Contact = () => {
             // height="400"
             required
           ></textarea>
-          <label for="message">
+          <label htmlFor="message">
             {createWave('Message')}
             {/* Password */}
           </label>
