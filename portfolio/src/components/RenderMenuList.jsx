@@ -25,7 +25,7 @@ const RenderMenuList = ({ icons }) => {
 
   return (
     <>
-      <a to={'/home'} rel="noreferrer" className="list-none">
+      <a href="/" rel="noreferrer" className="list-none">
         {icons && icons[0]} Home
       </a>
       <a
