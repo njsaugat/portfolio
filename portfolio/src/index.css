@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 @import url('App.css');
 @tailwind base;
 @tailwind components;
@@ -5,6 +7,10 @@
 
 body {
   overflow-x: hidden;
+  font-family: 'Kameron', serif;
+}
+h1 {
+  font-family: 'Arvo', serif;
 }
 ::-webkit-scrollbar {
   width: 10px;
